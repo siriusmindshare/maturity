@@ -15,8 +15,8 @@ maturity/
 │
 ├── app.py               # FastAPI backend
 ├── streamlit_app.py    # Streamlit UI
-├── test.py             # Testing scripts (optional)
 ├── requirements.txt    # Dependencies
+|-- AI_Maturity.sql     # Cortex Snowflake setup
 ├── .env                # Environment variables
 ├── maturity/           # Python virtual environment
 └── __pycache__/        # Auto-generated
