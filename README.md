@@ -166,9 +166,12 @@ deactivate
 ---
 
 docker build -t snowflake-cortex-chat .
+
 docker run --env-file .env -p 8000:8000 -p 8501:8501 snowflake-cortex-chat
 
+
 docker compose up --build
+
 docker compose down
 
 ## 🚀 Future Improvements
