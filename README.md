@@ -15,8 +15,8 @@ maturity/
 │
 ├── app.py               # FastAPI backend
 ├── streamlit_app.py    # Streamlit UI
+├── test.py             # Testing scripts (optional)
 ├── requirements.txt    # Dependencies
-|-- AI_Maturity.sql     # Cortex Snowflake setup
 ├── .env                # Environment variables
 ├── maturity/           # Python virtual environment
 └── __pycache__/        # Auto-generated
@@ -164,6 +164,12 @@ deactivate
 ```
 
 ---
+
+docker build -t snowflake-cortex-chat .
+docker run --env-file .env -p 8000:8000 -p 8501:8501 snowflake-cortex-chat
+
+docker compose up --build
+docker compose down
 
 ## 🚀 Future Improvements
 
